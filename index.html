@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio-section">
+        <h2>My Projects</h2>
+        <div class="portfolio-controls">
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="web-dev">Web Development</button>
+            <button class="filter-btn" data-category="data-science">Data Science</button>
+            <button class="filter-btn" data-category="ui-design">UI Design</button>
+          </div>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search projects..."
+            class="search-bar"
+          />
+          <button id="theme-toggle" class="theme-toggle">Toggle Dark Mode</button>
+        </div>
+      
+        <div id="portfolio-items-container" class="portfolio-items"></div>
+      
+        <div id="pagination" class="pagination"></div>
+      </div>
+      
+      <!-- Modal Popup -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

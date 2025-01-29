@@ -1,0 +1,46 @@
+/* Common Styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
+    --modal-bg: #ffffff;
+    --border-color: #ddd;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --button-bg: #1e88e5;
+    --button-hover: #1565c0;
+    --modal-bg: #1c1c1c;
+    --border-color: #333;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .portfolio-section,
+  .modal-content {
+    background-color: var(--modal-bg);
+    border: 1px solid var(--border-color);
+  }
+  
+  .filter-btn,
+  .pagination button,
+  .theme-toggle {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+  }
+  
+  .filter-btn:hover,
+  .pagination button:hover,
+  .theme-toggle:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Other styles remain unchanged */
+  
